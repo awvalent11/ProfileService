@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/profile_repository
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    connectionProperties:
+      sslFactory: org.postgresql.ssl.DefaultJavaSSLFactory
+
+management:
+  server:
+    port: 8080
+
