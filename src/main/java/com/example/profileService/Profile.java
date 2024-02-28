@@ -1,16 +1,15 @@
-package profileData;
+package com.example.profileService;
 
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
-@Data
+@Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "profile_repository")
 public class Profile {
 
     @Id
@@ -18,7 +17,7 @@ public class Profile {
     Long id;
     String email;
     Double balance;
-    Long outstandingBetsId;
-    Long pastBetsId;
+    Long outstandingbetsid;
+    Long pastbetsid;
 
 }
